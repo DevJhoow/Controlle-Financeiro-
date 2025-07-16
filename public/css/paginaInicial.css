@@ -1,0 +1,150 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f2f1, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background-color: #131a16;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    h1, h2, h3, h5 {
+      color: #198754;
+      font-weight: 700;
+    }
+
+    /* Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      width: 100%;
+    }
+
+    .menu-btn {
+      background-color: #146c43;
+      color: #fff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .menu-btn i {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .menu-btn:hover {
+      background-color: #117a47;
+      transform: translateY(-5px);
+    }
+
+    .receita {
+      background-color: #d1e7dd !important;
+      color: #198754 !important;
+    }
+
+    .despesa {
+      background-color: #f8d7da !important;
+      color: #dc3545 !important;
+    }
+
+    /* Welcome Text */
+    .welcome-text p {
+      color: #14532d;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    /* Carousel Custom */
+    .carousel-inner > .carousel-item {
+      padding: 30px;
+      border-radius: 15px;
+      color: #14532d;
+      text-align: center;
+      font-weight: 600;
+      min-height: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .carousel-item:nth-child(1) {
+      background-color: #d1e7dd;
+    }
+
+    .carousel-item:nth-child(2) {
+      background-color: #f8d7da;
+    }
+
+    .carousel-item:nth-child(3) {
+      background-color: #cfe2ff;
+      color: #084298;
+    }
+
+    /* Features */
+    .features .bi {
+      font-size: 3rem;
+      color: #198754;
+    }
+
+    /* Testimonials */
+    blockquote {
+      background-color: #d1e7dd;
+      border-left: 6px solid #198754;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      font-style: italic;
+      color: #14532d;
+    }
+
+    blockquote footer {
+      text-align: right;
+      font-style: normal;
+      font-weight: 600;
+      color: #0f5132;
+    }
+
+    /* CTA */
+    .cta-btn {
+      display: inline-block;
+      background-color: #198754;
+      color: white;
+      font-weight: 700;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+
+    .cta-btn:hover {
+      background-color: #146c43;
+    }
+
+    @media (max-width: 576px) {
+      main {
+        padding: 20px 10px;
+      }
+    }
