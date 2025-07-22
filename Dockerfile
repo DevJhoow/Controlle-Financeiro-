@@ -20,9 +20,6 @@ COPY . .
 # Instalar dependências do Laravel
 RUN composer install --optimize-autoloader --no-dev
 
-
-RUN php artisan migrate --force
-
 # Garantir que os diretórios existem antes do chown
 RUN mkdir -p storage bootstrap/cache \
  && chown -R www-data:www-data storage bootstrap/cache
