@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> @yield('title') </title>
     {{-- css --}}
-    <link rel="stylesheet" href="{{ asset('css/paginaInicial.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/paginaInicial.css') }}">
 
     <!-- Bootstrap + Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
