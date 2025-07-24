@@ -58,7 +58,7 @@
 
     <!-- CTA -->
     <div style="text-align: center;">
-        <a href="cadastro.html" class="cta-btn">Crie sua conta gratuitamente</a>
+        <a href="{{ route('registro') }}" class="cta-btn">Crie sua conta gratuitamente</a>
     </div>
 
 @endsection
