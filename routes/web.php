@@ -14,6 +14,11 @@ Route::get('/demo/relatorios', function () {
     return view('demo.relatorio');
 })->name('demo.relatorios');
 
+Route::get('/demo/fluxo-caixa', function () {
+    return view('demo.fluxo-caixa');
+})->name('demo.fluxo-caixa');
+
+
 
 //login
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
