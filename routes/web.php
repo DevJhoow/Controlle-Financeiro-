@@ -26,6 +26,9 @@ Route::get('/demo/lancar-receita', function () {
     return view('demo.lancar-receita');
 })->name('demo.lancar-receita');
 
+Route::get('/demo/lancar-despesa', function () {
+    return view('demo.lancar-despesa');
+})->name('demo.lancar-despesa');
 
 //login
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
