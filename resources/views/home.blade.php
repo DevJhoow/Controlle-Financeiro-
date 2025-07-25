@@ -13,12 +13,17 @@
 
     <!-- Menu Grid -->
     <div class="menu-grid">
-            <div class="menu-btn"><i class="bi bi-bar-chart-line-fill"></i><br>Gráficos</div>
-            <div class="menu-btn"><i class="bi bi-file-earmark-text-fill"></i><br>Relatórios</div>
-            <div class="menu-btn"><i class="bi bi-wallet2"></i><br>Fluxo de Caixa</div>
-            <div class="menu-btn"><i class="bi bi-journal-check"></i><br>Plano de Contas</div>
-            <div class="menu-btn receita"><i class="bi bi-cash-coin"></i><br>Lançar Receitas</div>
-            <div class="menu-btn despesa"><i class="bi bi-cash"></i><br>Lançar Despesas</div>
+        {{-- demo de relatorio --}}
+        <div class="menu-btn">
+           <a href="{{ route('demo.relatorios') }}" class="text-decoration-none text-white d-block text-center">
+               <i class="bi bi-file-earmark-text-fill"></i><br>Relatórios
+           </a>
+        </div>
+        <div class="menu-btn"><i class="bi bi-wallet2"></i><br>Fluxo de Caixa</div>
+        <div class="menu-btn"><i class="bi bi-journal-check"></i><br>Plano de Contas</div>
+        <div class="menu-btn receita"><i class="bi bi-cash-coin"></i><br>Lançar Receitas</div>
+        <div class="menu-btn despesa"><i class="bi bi-cash"></i><br>Lançar Despesas</div>
+        <div class="menu-btn"><i class="bi bi-bar-chart-line-fill"></i><br>Gráficos</div>
     </div>
 
     <!-- Funcionalidades -->

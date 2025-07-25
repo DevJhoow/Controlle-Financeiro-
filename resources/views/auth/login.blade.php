@@ -40,6 +40,8 @@
                     <button type="submit" class="btn btn-primary btn-sm">
                         <i class="bi bi-box-arrow-in-right me-1"></i> Entrar
                     </button>
+                    <a href="{{ route('home.index') }}" class="btn btn-link btn-sm">Cancelar</a>
+
                 </div>
             </form>
         </div>

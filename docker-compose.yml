@@ -5,5 +5,5 @@ services:
     build: .
     ports:
       - "8000:8000"
-    # volumes:  # Comente ou remova em produção!
+      
     #   - ./:/var/www

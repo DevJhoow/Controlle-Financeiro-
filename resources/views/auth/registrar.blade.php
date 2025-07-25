@@ -34,6 +34,8 @@
             <input type="password" class="form-control" name="password_confirmation" required>
         </div>
         <button type="submit" class="btn btn-success">Cadastrar</button>
+
+        <a href="{{ route('home.index') }}" class="btn btn-link btn-sm">Cancelar</a>
     </form>
 </div>
 @endsection

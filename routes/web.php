@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Route;
 //home
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
+//Demostraçoes
+Route::get('/demo/relatorios', function () {
+    return view('demo.relatorio');
+})->name('demo.relatorios');
+
+
 //login
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
