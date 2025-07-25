@@ -18,6 +18,9 @@ Route::get('/demo/fluxo-caixa', function () {
     return view('demo.fluxo-caixa');
 })->name('demo.fluxo-caixa');
 
+Route::get('/demo/plano-contas', function () {
+    return view('demo.plano-contas');
+})->name('demo.plano-contas');
 
 
 //login
