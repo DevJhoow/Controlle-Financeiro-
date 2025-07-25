@@ -22,6 +22,10 @@ Route::get('/demo/plano-contas', function () {
     return view('demo.plano-contas');
 })->name('demo.plano-contas');
 
+Route::get('/demo/lancar-receita', function () {
+    return view('demo.lancar-receita');
+})->name('demo.lancar-receita');
+
 
 //login
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
