@@ -46,39 +46,30 @@
         </div>
     </div>
 
-    <!-- Funcionalidades -->
     <section class="features">
-            <h3 style="text-align:center; margin-bottom: 30px;">Funcionalidades que você vai Surpreender</h3>
-            <div class="row text-center">
-            <div class="col-md-4 mb-4">
-                <i class="bi bi-speedometer2"></i>
+        <h3 class="text-center mb-4">Funcionalidades que vão te surpreender</h3>
+        <div class="row text-center justify-content-center align-items-stretch">
+            <div class="col-md-4 mb-4 d-flex flex-column h-100">
+                <i class="bi bi-speedometer2 fs-1"></i>
                 <h5 class="mt-3">Dashboard Intuitivo</h5>
                 <p>Acompanhe seus dados financeiros de forma visual e simples.</p>
             </div>
-            <div class="col-md-4 mb-4">
-                <i class="bi bi-graph-up"></i>
+            <div class="col-md-4 mb-4 d-flex flex-column h-100">
+                <i class="bi bi-graph-up fs-1"></i>
                 <h5 class="mt-3">Gráficos Dinâmicos</h5>
                 <p>Visualize sua evolução financeira com gráficos claros e personalizados.</p>
             </div>
-            <div class="col-md-4 mb-4">
-                <i class="bi bi-people"></i>
-                <h5 class="mt-3">Suporte Especializado</h5>
-                <p>Equipe pronta para tirar dúvidas e ajudar no seu planejamento.</p>
+            <div class="col-md-4 mb-4 d-flex flex-column h-100 text-center">
+                <img src="{{ asset('img/j.PNG') }}" alt="Imagem Suporte" style="width: 80px; height: 80px;" class="img-fluid rounded-circle mb-2 mx-auto d-block">
+                
+                <h5 class="mt-2 mb-1">Suporte Especializado</h5>
+                
+                <a href="https://wa.me/5519988630793" target="_blank" class="text-decoration-none d-inline-block small">
+                    <i class="bi bi-whatsapp me-1 text-success fs-6"></i>
+                    (19) 98863-0793
+                </a>
             </div>
-            </div>
-    </section>
-
-    <!-- Depoimentos -->
-    <section class="testimonials">
-        <h3 style="text-align:center; margin-bottom: 20px;">O que dizem sobre nós</h3>
-        <blockquote>
-        <p>"Com o painel financeiro da FinanPro, consegui organizar minhas finanças e estou muito mais tranquilo no fim do mês."</p>
-        <footer>Maria Silva, Empresária</footer>
-        </blockquote>
-        <blockquote>
-        <p>"A equipe especializada me ajudou a planejar meus investimentos de forma simples e prática."</p>
-        <footer>João Pereira, Autônomo</footer>
-        </blockquote>
+        </div>
     </section>
 
     <!-- CTA -->

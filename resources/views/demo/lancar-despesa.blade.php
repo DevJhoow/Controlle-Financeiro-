@@ -7,23 +7,14 @@
         <h2 class="text-center mb-4 text-danger">Lançar Despesas</h2>
 
         <form>
-            <label for="data-despesa" class="form-label">Data</label>
-            <input type="date" id="data-despesa" class="form-control mb-3">
-
             <label for="descricao-despesa" class="form-label">Descrição</label>
             <input type="text" id="descricao-despesa" class="form-control mb-3" placeholder="Ex: Compra de insumos">
 
+            <label for="data-despesa" class="form-label">Data</label>
+            <input type="date" id="data-despesa" class="form-control mb-3">
+
             <label for="valor-despesa" class="form-label">Valor (R$)</label>
             <input type="number" id="valor-despesa" class="form-control mb-3" placeholder="Ex: 250.00">
-
-            <label for="categoria-despesa" class="form-label">Categoria</label>
-            <select id="categoria-despesa" class="form-select mb-4">
-                <option>Matéria-prima</option>
-                <option>Contas Fixas</option>
-                <option>Frete</option>
-                <option>Salários</option>
-                <option>Outros</option>
-            </select>
         </form>
 
         <p class="text-muted text-center mb-4">

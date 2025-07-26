@@ -34,18 +34,6 @@
                     <label for="data" class="form-label">Data da Receita</label>
                     <input type="date" id="data" class="form-control">
                 </div>
-
-                <div class="mb-3">
-                    <label for="forma_pagamento" class="form-label">Forma de Pagamento</label>
-                    <select id="forma_pagamento" class="form-select">
-                        <option selected disabled>Escolha</option>
-                        <option>Dinheiro</option>
-                        <option>Pix</option>
-                        <option>Cartão de Débito</option>
-                        <option>Cartão de Crédito</option>
-                        <option>Transferência Bancária</option>
-                    </select>
-                </div>
             </form>
         </div>
 
