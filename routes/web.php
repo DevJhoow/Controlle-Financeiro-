@@ -30,6 +30,10 @@ Route::get('/demo/lancar-despesa', function () {
     return view('demo.lancar-despesa');
 })->name('demo.lancar-despesa');
 
+Route::get('/demo/grafico', function () {
+    return view('demo.grafico');
+})->name('demo.grafico');
+
 //login
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);

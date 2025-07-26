@@ -64,7 +64,8 @@
 <main>
 
     @yield('content')
-
+    @yield('scripts')
+    <!-- Gráfico -->
 </main>
 
 <footer>

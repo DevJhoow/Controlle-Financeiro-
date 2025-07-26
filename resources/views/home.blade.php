@@ -39,7 +39,11 @@
                 <i class="bi bi-cash"></i><br>Lançar Despesas
             </a>
         </div>
-        <div class="menu-btn"><i class="bi bi-bar-chart-line-fill"></i><br>Gráficos</div>
+        <div class="menu-btn">
+            <a href="{{ route('demo.grafico') }}" class="text-decoration-none text-white d-block text-center">
+                <i class="bi bi-bar-chart-line-fill"></i><br>Gráficos
+            </a>
+        </div>
     </div>
 
     <!-- Funcionalidades -->
