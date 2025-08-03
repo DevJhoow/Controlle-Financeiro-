@@ -28,38 +28,18 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 📥 Salário - R$ 5.000,00
-                <span class="float-end">
-                    <button class="btn btn-sm btn-primary me-1" disabled><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-sm btn-danger" disabled><i class="bi bi-trash"></i></button>
-                </span>
             </li>
             <li class="list-group-item">
                 📤 Aluguel - R$ 1.200,00
-                <span class="float-end">
-                    <button class="btn btn-sm btn-primary me-1" disabled><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-sm btn-danger" disabled><i class="bi bi-trash"></i></button>
-                </span>
             </li>
             <li class="list-group-item">
                 📤 Internet - R$ 150,00
-                <span class="float-end">
-                    <button class="btn btn-sm btn-primary me-1" disabled><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-sm btn-danger" disabled><i class="bi bi-trash"></i></button>
-                </span>
             </li>
             <li class="list-group-item">
                 📥 Freelancer - R$ 2.500,00
-                <span class="float-end">
-                    <button class="btn btn-sm btn-primary me-1" disabled><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-sm btn-danger" disabled><i class="bi bi-trash"></i></button>
-                </span>
             </li>
             <li class="list-group-item">
                 📤 Supermercado - R$ 320,00
-                <span class="float-end">
-                    <button class="btn btn-sm btn-primary me-1" disabled><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-sm btn-danger" disabled><i class="bi bi-trash"></i></button>
-                </span>
             </li>
         </ul>
     </div>

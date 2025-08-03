@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> @yield('title') </title>
     {{-- css  secure_--}}
-    <link rel="stylesheet" href="{{ secure_asset('css/paginaInicial.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/paginaInicial.css') }}">
 
     <!-- Bootstrap + Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -17,48 +17,56 @@
 </head>
 <body>
     <header class="d-flex justify-content-between align-items-center flex-wrap container-fluid px-3 py-3 bg-dark">
-        <h1 class="m-0 fs-5 text-white">
+    <h1 class="m-0 fs-5 text-white">
+        @auth
+            <a href="{{ route('dashboard') }}" class="text-white text-decoration-none custom-hover d-flex align-items-center">
+                <i class="bi bi-person-circle me-2"></i>
+                {{ Auth::user()->name }}
+            </a>
+        @else
             <a href="{{ route('home.index') }}" class="text-white text-decoration-none custom-hover">
                 Controle Financeiro - FinanPro <i class="bi bi-currency-dollar me-1"></i>
             </a>
-        </h1>
+        @endauth
+    </h1>
 
-        <div class="d-flex gap-2 mt-2 mt-md-0">
-            @auth
-                <div class="dropdown">
-                    <a class="btn btn-outline-light btn-sm dropdown-toggle d-flex align-items-center"
-                    href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person-circle me-2"></i>
-                        {{ Auth::user()->name }}
-                    </a>
+    <div class="d-flex gap-2 mt-2 mt-md-0">
+        @auth
+            <div class="dropdown">
+                <a class="btn btn-outline-light btn-sm dropdown-toggle d-flex align-items-center"
+                href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle me-2"></i>
+                    {{ Auth::user()->name }}
+                </a>
 
-                    <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="userDropdown">
-                        <li>
-                            <a class="dropdown-item" href="{{ route('dashboard') }}">
-                                <i class="bi bi-speedometer2 me-1"></i> Dashboard
-                            </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <form action="{{ route('logout') }}" method="GET" class="d-inline">
-                                @csrf
-                                <button type="submit" class="dropdown-item text-danger">
-                                    <i class="bi bi-box-arrow-right me-1"></i> Sair
-                                </button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            @else
-                <a href="{{ route('login') }}" class="btn btn-light btn-sm">
-                    <i class="bi bi-box-arrow-in-right me-1"></i> Login
-                </a>
-                <a href="{{ route('registro') }}" class="btn btn-outline-light btn-sm">
-                    <i class="bi bi-person-plus me-1"></i> Criar Conta
-                </a>
-            @endauth
-        </div>
-    </header>
+                <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="userDropdown">
+                    <li>
+                        <a class="dropdown-item" href="{{ route('dashboard') }}">
+                            <i class="bi bi-speedometer2 me-1"></i> Dashboard
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <form action="{{ route('logout') }}" method="GET" class="d-inline">
+                            @csrf
+                            <button type="submit" class="dropdown-item text-danger">
+                                <i class="bi bi-box-arrow-right me-1"></i> Sair
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        @else
+            <a href="{{ route('login') }}" class="btn btn-light btn-sm">
+                <i class="bi bi-box-arrow-in-right me-1"></i> Login
+            </a>
+            <a href="{{ route('registro') }}" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-person-plus me-1"></i> Criar Conta
+            </a>
+        @endauth
+    </div>
+</header>
+
 
 
 <main>

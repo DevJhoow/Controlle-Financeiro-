@@ -2,37 +2,24 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DemoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReceitaController;
+use App\Http\Controllers\RelatorioUserController;
 use Illuminate\Support\Facades\Route;
 
 //home
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
 //Demostraçoes
-Route::get('/demo/relatorios', function () {
-    return view('demo.relatorio');
-})->name('demo.relatorios');
-
-Route::get('/demo/fluxo-caixa', function () {
-    return view('demo.fluxo-caixa');
-})->name('demo.fluxo-caixa');
-
-Route::get('/demo/plano-contas', function () {
-    return view('demo.plano-contas');
-})->name('demo.plano-contas');
-
-Route::get('/demo/lancar-receita', function () {
-    return view('demo.lancar-receita');
-})->name('demo.lancar-receita');
-
-Route::get('/demo/lancar-despesa', function () {
-    return view('demo.lancar-despesa');
-})->name('demo.lancar-despesa');
-
-Route::get('/demo/grafico', function () {
-    return view('demo.grafico');
-})->name('demo.grafico');
+Route::prefix('demo')->name('demo.')->group(function () {
+    Route::get('/relatorios', [DemoController::class, 'relatorios'])->name('relatorios');
+    Route::get('/fluxo-caixa', [DemoController::class, 'fluxoCaixa'])->name('fluxo-caixa');
+    Route::get('/plano-contas', [DemoController::class, 'planoContas'])->name('plano-contas');
+    Route::get('/lancar-receita', [DemoController::class, 'lancarReceita'])->name('lancar-receita');
+    Route::get('/lancar-despesa', [DemoController::class, 'lancarDespesa'])->name('lancar-despesa');
+    Route::get('/grafico', [DemoController::class, 'grafico'])->name('grafico');
+});
 
 //login
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
@@ -45,6 +32,7 @@ Route::post('/registrar', [AuthController::class, 'registro']);
 //dashboard
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/relatorioUser', [RelatorioUserController::class, 'index'])->name('relatorio-user');
     Route::get('/logout', [DashboardController::class, 'logout'])->name('logout');
 });
 
