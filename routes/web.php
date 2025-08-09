@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PlanoContasController;
 use App\Http\Controllers\ReceitaController;
 use App\Http\Controllers\RelatorioUserController;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/relatorioUser', [RelatorioUserController::class, 'index'])->name('relatorio-user');
     Route::get('/logout', [DashboardController::class, 'logout'])->name('logout');
+    
+    Route::get('/planoContas', [PlanoContasController::class, 'index'])->name('plano-contas-user');
+    Route::get('/plano_itens/{id}/edit', [PlanoContasController::class, 'edit'])->name('plano_itens.edit');
+    Route::put('/plano_itens/{id}', [PlanoContasController::class, 'update'])->name('plano_itens.update');
+    Route::delete('/plano_itens/{id}', [PlanoContasController::class, 'destroy'])->name('plano_itens.destroy');
+
+
 });
 
 

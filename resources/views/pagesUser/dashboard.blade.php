@@ -82,16 +82,16 @@
             </a>
         </div>
 
-        <div class="col-md-3">
+        {{-- <div class="col-md-3">
             <a href="{{ route('demo.fluxo-caixa') }}" class="text-decoration-none">
                 <div class="feature-box">
                     💼<br>Fluxo de Caixa
                 </div>
             </a>
-        </div>
+        </div> --}}
 
         <div class="col-md-3">
-            <a href="{{ route('demo.plano-contas') }}" class="text-decoration-none">
+            <a href="{{ route('plano-contas-user') }}" class="text-decoration-none">
                 <div class="feature-box">
                     🧾<br>Plano de Contas
                 </div>

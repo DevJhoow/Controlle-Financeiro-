@@ -15,14 +15,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = \App\Models\User::factory()->create([
-            'name' => 'teste',
-            'email' => 'teste@gmail.com',
-            'password' => Hash::make('123456'), // ou bcrypt('123456')
-        ]);
-
-        \App\Models\Lancamento::factory()->count(5)->create([
-            'user_id' => $user->id,
-        ]);
+        $this->call(PlanejamentoSeeder::class);
     }
 }

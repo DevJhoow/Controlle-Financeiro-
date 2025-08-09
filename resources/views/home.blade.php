@@ -26,7 +26,7 @@
         </div>
         <div class="menu-btn">
             <a href="{{ route('demo.plano-contas') }}" class="text-decoration-none text-white d-block text-center">
-                <i class="bi bi-journal-check"></i><br>Plano de Contas
+                <i class="bi bi-journal-check"></i><br>Planejamento de Contas
             </a>
         </div>
         <div class="menu-btn receita">
